@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="./p5.min.js"></script>
+    <script src="./p5.dom.min.js"></script>
+    <script src="./p5.sound.min.js"></script>
+    <script src="./sketch.js"></script>
+    <script src="http://chir.ag/projects/ntc/ntc.js"></script>  
+  </head>
+  <style>
+    html, body {
+      margin: 10px;
+      padding: 0;
+    }
+
+    #divider {
+      clear: both;
+      height: 10px;
+    }
+      
+    #colorLabel {
+        float: right;
+
+    }
+    
+    #container {
+        width: 400px;
+    }
+  </style>    
+  <body>
+    <h1>Linear Color Gradient Animation</h1>
+    <p>Use the color selectors below to set the starting and ending color for the animation. Then press and hold any key to toggle the animation.</p>
+    <div id="container">
+        <label id="fromLabel">Starting color (Black): </label>
+        <input id=from type="color"> 
+        <div id=divider></div>
+        <label id="toLabel">Ending color (Black): </label>
+        <input id=to type="color">
+        <div id=divider></div>
+        <button id=switch>Start</button>
+        <label id=colorLabel>Current Color: foobarfoobarfoobar</label>
+        <div id=divider></div>
+    </div>
+  </body>
+</html>
